@@ -1,6 +1,217 @@
-.footer-logo {
-  height: 300px;
-  background-image: url("/logo/푸터로고.png");
-  background-size: cover;
-  background-position: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.logo-wrapper {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+}
+.section1,
+.section2,
+.section3,
+.section4,
+.section5,
+.section6 {
+  width: auto; /* 너비를 자동으로 설정 */
+  height: auto;
+}
+
+.section1 {
+  position: relative;
+  background-image: url('../../public/images/자산 2.png'); /* 이미지 경로 설정 */
+  background-size: cover; /* 이미지가 div를 완전히 채우도록 설정 */
+  aspect-ratio: 9 / 9; /* 이미지의 종횡비를 설정 (예: 16:9) */
+}
+
+.blur {
+  /* 흰색 반투명 배경 */
+  background-color: rgba(255, 255, 255, 0.3); /* 여기서 투명도를 조절하여 더 불투명하거나 투명하게 만들 수 있음 */
+  /* 블러 효과 적용 */
+  backdrop-filter: blur(5px); /* 블러 효과의 강도를 조절하고 싶다면 px 값을 변경하세요 */
+  /* 요소의 경계를 둥글게 처리 */
+  border-radius: 10px;
+  /* 요소에 padding 추가 */
+  padding: 10px;
+
+  /* 테두리 추가 (선택적) */
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.bottom-icon-wrapper {
+  position: absolute;
+  bottom: 72px;
+}
+.bottom-icon-wrapper span {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.bottom-icon-wrapper img {
+  margin-right: 12px;
+}
+
+.section2-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.wrapper-image {
+  width: 100%;
+}
+.flex-image-box {
+  width: 100%;
+  display: flex;
+}
+
+.flex-image-box img {
+  width: 100%;
+  height: 100%;
+}
+.showcase-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item-sub {
+  width: 100%;
+}
+
+.image2 {
+  width: 100%;
+  height: 100%;
+}
+
+.showcase-image-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.showcase-image {
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  position: relative;
+}
+
+.section4-image-wrapper {
+  padding: 15%;
+  padding-bottom: 24px;
+}
+
+.model-list {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.model-item {
+  width: 100%;
+}
+.model-item-image {
+  width: 100%;
+}
+
+/* 구매하기 button css */
+.button-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buy-button {
+  border-radius: 40px;
+  display: flex;
+  background-color: #20406c;
+  width: 350px;
+  height: 65px;
+  margin: 23px auto 40px auto;
+  padding: auto;
+  justify-content: center;
+  align-items: center;
+  color: #e3e7ed;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  flex-direction: column;
+}
+
+.bg-green {
+  background-color: #86bc43;
+}
+.bg-sky {
+  background-color: #ebf5fb;
+}
+.txt-blue {
+  color: #22406c;
+}
+.txt-darkgreen {
+  color: #228622;
+}
+.txt-white {
+  color: '#fff';
+}
+
+.speech-bubble {
+  position: relative;
+  background: #8cc63f;
+  border-radius: 4px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  font-size: 24px; /* Or any other size */
+  line-height: 1.4; /* Or any other line height */
+  font-weight: bold; /* If the text should be bold */
+}
+
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: #8cc63f;
+  border-bottom: 0;
+  margin-left: -20px;
+  margin-bottom: -20px;
+}
+.item-border {
+  border-right: 1px solid #22406c;
+}
+@media all and (max-width: 768px) {
+  .bottom-icon-wrapper {
+    position: absolute;
+    bottom: 24px;
+    padding-right: 24px;
+  }
+
+  .bottom-icon-wrapper img {
+    margin-right: 10px;
+  }
 }
