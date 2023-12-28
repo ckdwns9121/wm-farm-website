@@ -1,113 +1,84 @@
-import Image from 'next/image'
+import Image from "next/image";
+import Footer from "./Footer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <div className="section1">
+        <div>배경</div>
+        <p>로고</p>
+        <p>더블유엠팜 쇼케이스 식물재배기</p>
+        <p>신선한 도시, 즐거운 농장</p>
+
+        <span>
+          <>아이콘</>
+          <p>모종과 씨앗 둘 다 생장 가능한 순환식 물 공급 시스템</p>
+        </span>
+        <span>
+          <>아이콘</>
+          <p>최적읜 생육환경 제공 빛, 온동, 물, 바람을 자동으로 공급</p>
+        </span>
+        <span>
+          <>아이콘</>
+          <p>좌/우측 다른 식물 키우기 가능 생육환경을 좌/우측 각각 제어</p>
+        </span>
+      </div>
+      <div className="selction2">
+        <p>더블유엠팜 쇼케이스 식물재배기</p>
+        <p>다양하게 활용할 수 있습니다</p>
+        <p>직접 식물을 기르며 어디서든 자연을 체험하고 정서적인 안전과 힐링을 느껴보세요</p>
+        <div>
+          {/* 사진 부분 */}
+          <div>노인복지관/지자체 image</div>
+          <div>학교/교육기관 image</div>
+          <div>초록 식물이 주는 편안함과 싱그러움으로 어르신들의 정서적 힐링을 선물해드립니다.</div>
+          <div>학교/교육기관에서 관찰 활동을 통해 인성 교육, 정서적인 안정감을 키울 수 있습니다.</div>
+          {/*  */}
+          <div>로비 image</div>
+          <div>레스토랑/카페 image</div>
+          <div>힐링과 여유로움 편안함을 느낄 수 있는 로비 쇼케이스로 초록이 주는 휴식을 느껴보세요</div>
+          <div>쇼케이스로 특별한 레시비/ 고급스러운 인테리어 효과를 경험해 보세요</div>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="selction3">
+        <div>
+          <span>빛과 물과 온도와 바람까지 알아서 제공해주는 식물재배기 </span>더블유엠팜 쇼케이스
+        </div>
+        <div>image</div>
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="section4">
+        <div>더블유엠팜 쇼케이스의 틀별함!</div>
+        <div>image</div>
+        <p>좌, 우측 나눠져 있어</p>
+        <p>온도조절, 물 공기 순환이 가능합니다.</p>
       </div>
-    </main>
-  )
+      <div className="section5">
+        <div>
+          <p>인테리어 최적화된 다양한 색상</p>
+          <p>디자인도 고급스러워 인테리어 효과 두 배!</p>
+        </div>
+        <div>image</div>
+        <p>*해당 색상은 이해를 돕기 위한 것으로 조명의 정도에 따라 색상이 다를 수 있습니다.</p>
+      </div>
+      <div className="section6">
+        <div>더블유엠팜 다른 모델 둘러보기</div>
+        <div>
+          <div>
+            <span>S800모델</span>
+            image
+          </div>
+          <div>
+            <span>S1400모델</span>
+            image
+          </div>
+          <div>
+            <span>S1600모델</span>
+            image
+          </div>
+        </div>
+        <div>구매하기</div>
+      </div>
+      <Footer />
+    </>
+  );
 }
