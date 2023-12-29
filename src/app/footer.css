@@ -7,10 +7,13 @@
   align-items: center;
   height: 140px;
 }
+
 .footer-item {
   width: 100%;
+  height: 100%;
+  display: flex;
   justify-content: center;
-  align-items: center;
+  flex-direction: column;
   padding-left: 72px;
 }
 
@@ -19,6 +22,7 @@
   width: 100%;
 }
 p.footer-title {
+  width: 100px;
   font-weight: bolder;
 }
 .footer-item p {
@@ -32,6 +36,7 @@ p.footer-title {
 }
 .footer-logo-item {
   width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,7 +57,7 @@ p.footer-title {
 }
 
 .footer-divider {
-  height: 50px; /* Adjust height as needed */
+  height: 72px; /* Adjust height as needed */
   width: 1px;
   background-color: white;
   margin: 0 20px; /* Adjust spacing as needed */
@@ -60,16 +65,28 @@ p.footer-title {
 
 /* Mobile - Landscape */
 @media (max-width: 576px) {
-  .buy-button {
-    width: 200px;
-    height: 50px;
-    font-size: 30px;
-    font-weight: 800;
-  }
-
   .footer-logo image {
     padding-right: 20px;
     width: 70%;
+  }
+  .footer-item p {
+    font-size: 1rem;
+  }
+  p.footer-title {
+    width: 55px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .footer-logo image {
+    padding-right: 20px;
+    width: 70%;
+  }
+  .footer {
+    padding: 0 12px;
+  }
+  .footer-item {
+    padding: 0;
   }
   .footer-item p {
     font-size: 1rem;

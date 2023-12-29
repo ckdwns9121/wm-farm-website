@@ -15,7 +15,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1024px;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
 }
@@ -36,28 +36,13 @@ body {
   aspect-ratio: 9 / 9; /* 이미지의 종횡비를 설정 (예: 16:9) */
 }
 
-.blur {
-  /* 흰색 반투명 배경 */
-  background-color: rgba(255, 255, 255, 0.3); /* 여기서 투명도를 조절하여 더 불투명하거나 투명하게 만들 수 있음 */
-  /* 블러 효과 적용 */
-  backdrop-filter: blur(5px); /* 블러 효과의 강도를 조절하고 싶다면 px 값을 변경하세요 */
-  /* 요소의 경계를 둥글게 처리 */
-  border-radius: 10px;
-  /* 요소에 padding 추가 */
-  padding: 10px;
-
-  /* 테두리 추가 (선택적) */
-  border: 1px solid rgba(255, 255, 255, 0.5);
-}
-
 .bottom-icon-wrapper {
   position: absolute;
-  bottom: 72px;
+  bottom: 150px;
 }
 .bottom-icon-wrapper span {
   display: flex;
   align-items: center;
-  margin-bottom: 12px;
 }
 .bottom-icon-wrapper img {
   margin-right: 12px;
@@ -88,6 +73,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 .item-sub {
   width: 100%;
@@ -137,6 +125,7 @@ body {
   align-items: center;
 }
 .buy-button {
+  cursor: pointer;
   border-radius: 40px;
   display: flex;
   background-color: #20406c;
@@ -147,8 +136,11 @@ body {
   justify-content: center;
   align-items: center;
   color: #e3e7ed;
-  font-size: 40px;
   font-weight: 900;
+  transition: all 0.3s ease-in-out;
+}
+.buy-button:hover {
+  opacity: 0.6;
 }
 
 .flex-center {
@@ -156,8 +148,39 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100px;
+  height: 120px;
   flex-direction: column;
+}
+
+/* 뱃지의 기본 컨테이너 스타일링 */
+.badge-container {
+  position: relative;
+  width: 180px; /* 원하는 뱃지의 너비 */
+  height: 40px; /* 원하는 뱃지의 높이 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 뱃지의 대각선 모양을 만드는 가상 요소 */
+.badge-container::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #8bc34a; /* 뱃지의 색상 */
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%); /* 대각선 모서리를 만드는 클립 패스 */
+}
+
+.left-badge::before {
+  transform: scaleX(-1);
+}
+
+/* 뱃지의 텍스트 스타일링 */
+.badge-text {
+  position: relative;
+  color: white; /* 텍스트 색상 */
+  z-index: 10; /* 텍스트가 배경 위로 오도록 설정 */
 }
 
 .bg-green {
@@ -213,5 +236,13 @@ body {
 
   .bottom-icon-wrapper img {
     margin-right: 10px;
+  }
+
+  .badge-container {
+    width: 120px; /* 원하는 뱃지의 너비 */
+    height: 30px;
+  }
+  .badge-text {
+    font-size: 10px;
   }
 }
