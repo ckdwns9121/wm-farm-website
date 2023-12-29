@@ -1,20 +1,30 @@
+'use client'; // this is a client component 👈🏽
+import { useEffect } from 'react';
 import Image from 'next/image';
 import Footer from './Footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="container">
       <div className="section1 px-5 py-24 md:px-12">
-        <div className="logo-wrapper">
+        <div className="logo-wrapper" data-aos="fade-left">
           <Image src={'/logos/header-logo.png'} alt="logo" width={187.5} height={37.5} />
         </div>
         <div>
-          <h2 className="relative txt-darkgreen text-lg md:text-4xl lg:text-5xl font-semibold mb-4">
+          <h2 className="relative txt-darkgreen text-lg md:text-4xl lg:text-5xl font-semibold mb-4" data-aos="fade-up">
             더블유엠팜 쇼케이스 식물재배기
           </h2>
-          <h1 className="txt-blue text-2xl md:text-5xl lg:text-6xl font-bold"> 신선한 도시, 즐거운 농장</h1>
+          <h1 className="txt-blue text-2xl md:text-5xl lg:text-6xl font-bold" data-aos="fade-up">
+            {' '}
+            신선한 도시, 즐거운 농장
+          </h1>
         </div>
-        <div className="bottom-icon-wrapper ">
+        <div className="bottom-icon-wrapper" data-aos="fade-up">
           <span className="mb-4 md:mb-10">
             <Image src={'/icons/section1-1.png'} alt="icon1" width={30} height={30} />
             <p className="text-sm md:text-3xl lg-text-5xl font-semibold">
@@ -36,7 +46,7 @@ export default function Home() {
         </div>
       </div>
       <div className="selction2">
-        <div className="section2-title py-5 px-12 md:py-24 md:px-48">
+        <div className="section2-title py-5 px-12 md:py-24 md:px-48" data-aos="zoom-in">
           <p className="text-base md:text-3xl font-semibold txt-darkgreen ">더블유엠팜 쇼케이스 식물재배기</p>
           <p className="text-xl md:text-5xl font-bold txt-blue md:pt-4 pb-8 ">다양하게 활용할 수 있습니다</p>
           <p className="text-base md:text-3xl font-semibold txt-blue ">
@@ -110,10 +120,12 @@ export default function Home() {
       </div>
       <div className="selction3">
         <div className="bg-green flex-center speech-bubble">
-          <span className="txt-white  text-white text-sm md:text-base lg:text-xl">
+          <span className="txt-white  text-white text-sm md:text-base lg:text-xl" data-aos="fade-up">
             빛과 물과 온도와 바람까지 알아서 제공해주는 식물재배기
           </span>
-          <h1 className="txt-blue text-xl md:text-4xl lg:text-6xl font-bold">더블유엠팜 쇼케이스</h1>
+          <h1 className="txt-blue text-xl md:text-4xl lg:text-6xl font-bold" data-aos="fade-up">
+            더블유엠팜 쇼케이스
+          </h1>
         </div>
         <div className="showcase-image-wrapper ">
           <Image
@@ -122,20 +134,31 @@ export default function Home() {
             className="image2 px-12 py-4"
             width={500}
             height={500}
+            data-aos="fade-right"
           />
         </div>
       </div>
       <div className="section4">
         <div className="bg-green flex-center speech-bubble">
-          <h1 className="text-white text-xl md:text-4xl lg:text-6xl font-bold">더블유엠팜 쇼케이스의 특별함!</h1>
+          <h1 className="text-white text-xl md:text-4xl lg:text-6xl font-bold" data-aos="fade-up">
+            더블유엠팜 쇼케이스의 특별함!
+          </h1>
         </div>
         <div className="p-12 md:px-48 lg:px-48">
-          <Image src="/images/section4.png" alt="더블유엠팜 쇼케이스" className="image2" width={500} height={500} />
+          <Image
+            src="/images/section4.png"
+            alt="더블유엠팜 쇼케이스"
+            className="image2"
+            width={500}
+            height={500}
+            data-aos="fade-left"
+          />
           <div
             className="subscriber 
           text-2xl md:text-3xl
           font-semibold
           flex txt-blue text-center justify-center w-full my-10 flex-col"
+            data-aos="flip-left"
           >
             <p>좌, 우측 나눠져 있어</p>
             <p className="break-keep">온도조절, 물 공기 순환이 가능합니다.</p>
@@ -144,8 +167,10 @@ export default function Home() {
       </div>
       <div className="section5 bg-sky  py-6 pb-8 md:py-6 lg:py-6 relative">
         <div className="flex-center">
-          <p className="text-base md:text-xl lg:text-4xl txt-blue pb-2">인테리어 최적화된 다양한 색상</p>
-          <p className="text-lg md:text-2xl lg:text-5xl font-bold txt-blue font-bold pb-4">
+          <p className="text-base md:text-xl lg:text-4xl txt-blue pb-2" data-aos="fade-up">
+            인테리어 최적화된 다양한 색상
+          </p>
+          <p className="text-lg md:text-2xl lg:text-5xl font-bold txt-blue font-bold pb-4" data-aos="fade-up">
             디자인도 고급스러워 인테리어 효과 두 배!
           </p>
         </div>
@@ -156,28 +181,56 @@ export default function Home() {
             className="image2"
             width={500}
             height={500}
+            data-aos="fade-up"
           ></Image>
-          <div className="absolute break-keep bottom-0 md:bottom-4 xl:bottom-4 left-4 font-semibold text-sm pr-4">
+          <div className="absolute break-keep bottom-0 text-xs md:bottom-4 xl:bottom-4 left-4 font-semibold md:text-sm pr-4">
             *해당 색상은 이해를 돕기 위한 것으로 조명의 정도에 따라 색상이 다를 수 있습니다.
           </div>
         </div>
       </div>
       <div className="section6">
-        <div className="txt-blue text-xl md:text-3xl lg:text-5xl font-bold py-12 text-center">
+        <div className="txt-blue text-xl md:text-3xl lg:text-5xl font-bold py-12 text-center" data-aos="fade-up">
           더블유엠팜 다른 모델 둘러보기
         </div>
         <div className="model-list bg-sky px-4 py-8 md:px-8 md: py-12">
           <div className="model-item">
-            <span className="text-lg md:text-xl lg:text-2xl font-bold txt-blue"> S800모델</span>
-            <Image src="/images/model/s800모델.png" alt="s800" className="model-item-image" width={500} height={500} />
+            <span className="text-lg md:text-xl lg:text-2xl font-bold txt-blue" data-aos="fade-up">
+              S800모델
+            </span>
+            <Image
+              src="/images/model/s800모델.png"
+              alt="s800"
+              className="model-item-image"
+              width={500}
+              height={500}
+              data-aos="flip-left"
+            />
           </div>
           <div className="model-item mx-4">
-            <span className="text-lg md:text-xl lg:text-2xl font-bold txt-blue">S1400모델</span>
-            <Image src="/images/model/s1400모델.png" alt="s800" className="model-item-image" width={500} height={500} />
+            <span className="text-lg md:text-xl lg:text-2xl font-bold txt-blue" data-aos="fade-up">
+              S1400모델
+            </span>
+            <Image
+              src="/images/model/s1400모델.png"
+              alt="s800"
+              className="model-item-image"
+              width={500}
+              height={500}
+              data-aos="flip-left"
+            />
           </div>
           <div className="model-item">
-            <span className="text-lg md:text-xl lg:text-2xl font-bold txt-blue">S1600모델</span>
-            <Image src="/images/model/s1600모델.png" alt="s800" className="model-item-image" width={500} height={500} />
+            <span className="text-lg md:text-xl lg:text-2xl font-bold txt-blue" data-aos="fade-up">
+              S1600모델
+            </span>
+            <Image
+              src="/images/model/s1600모델.png"
+              alt="s800"
+              className="model-item-image"
+              width={500}
+              height={500}
+              data-aos="flip-left"
+            />
           </div>
         </div>
         <div className="button-wrap py-4 md:py-12">
