@@ -1,4 +1,10 @@
 import './globals.css';
+import { Noto_Sans_KR } from 'next/font/google'; // @next/font will be removed in next14
+
+const notoSansKr = Noto_Sans_KR({
+  weight: ['500'],
+  subsets: ['latin'],
+});
 
 export const metadata = {
   title: 'WM Farm',
@@ -8,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={notoSansKr.className}>{children}</body>
     </html>
   );
 }

@@ -11,12 +11,12 @@ export default function Home() {
   }, []);
   return (
     <div className="container">
-      <div className="section1 px-5 py-24 md:px-12">
+      <div className="section1 px-5 py-24 md:py-48 md:px-12">
         <div className="logo-wrapper" data-aos="fade-left">
           <Image src={'/logos/header-logo.png'} alt="logo" width={187.5} height={37.5} />
         </div>
         <div>
-          <h2 className="relative txt-darkgreen text-lg md:text-4xl lg:text-5xl font-semibold mb-4" data-aos="fade-up">
+          <h2 className="relative txt-darkgreen text-lg md:text-4xl lg:text-4xl font-semibold mb-4" data-aos="fade-up">
             더블유엠팜 쇼케이스 식물재배기
           </h2>
           <h1 className="txt-blue text-2xl md:text-5xl lg:text-6xl font-bold" data-aos="fade-up">
