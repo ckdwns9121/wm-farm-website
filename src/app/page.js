@@ -16,20 +16,15 @@ export default function Home() {
           <Image className="logo-icon" src={'/logos/header-logo.png'} alt="logo" width={187.5} height={37.5} />
         </div>
         <div>
-          <div className="text-background">
+          <div className="text-background" data-aos="fade-up">
             <div class="blur-background"></div>
-            <h2
-              className="relative txt-darkgreen text-lg md:text-4xl lg:text-4xl font-semibold mb:mb-4"
-              data-aos="fade-up"
-            >
+            <h2 className="relative txt-darkgreen text-lg md:text-4xl lg:text-4xl font-semibold mb:mb-4">
               더블유엠팜 쇼케이스 식물재배기
             </h2>
           </div>
-          <div className="text-background">
+          <div className="text-background" data-aos="fade-up">
             <div className="blur-background"></div>
-            <h1 className="txt-blue text-2xl md:text-5xl lg:text-6xl font-bold" data-aos="fade-up">
-              신선한 도시, 즐거운 농장
-            </h1>
+            <h1 className="txt-blue text-2xl md:text-5xl lg:text-6xl font-bold">신선한 도시, 즐거운 농장</h1>
           </div>
         </div>
         <div className="bottom-icon-wrapper" data-aos="fade-up">
