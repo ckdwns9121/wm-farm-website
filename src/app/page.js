@@ -24,7 +24,7 @@ export default function Home() {
           </div>
           <div className="text-background" data-aos="fade-up">
             <div className="blur-background"></div>
-            <h1 className="txt-blue text-2xl md:text-5xl lg:text-6xl font-bold">신선한 도시, 즐거운 농장</h1>
+            <h2 className="relative txt-blue text-2xl md:text-5xl lg:text-6xl font-bold">신선한 도시, 즐거운 농장</h2>
           </div>
         </div>
         <div className="bottom-icon-wrapper" data-aos="fade-up">
