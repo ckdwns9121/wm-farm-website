@@ -49,8 +49,8 @@ export default function Home() {
               <div className="relative">
                 <Image src="/images/section2-1.png" alt="노인복지관/지자체" width={500} height={500} />
                 <span className="absolute bottom-0 right-0">
-                  <span class="badge-container left-badge">
-                    <span class="badge-text text-sm font-bold">노인복지관/지자체</span>
+                  <span className="badge-container left-badge">
+                    <span className="badge-text text-sm font-bold">노인복지관/지자체</span>
                   </span>
                 </span>
               </div>
@@ -62,8 +62,8 @@ export default function Home() {
               <div className="relative">
                 <Image src="/images/section2-2.png" alt="학교/교육기관" width={500} height={500} />
                 <div className="absolute left-0 bottom-0">
-                  <div class="badge-container ">
-                    <div class="badge-text text-sm font-bold">학교/교육기관</div>
+                  <div className="badge-container ">
+                    <div className="badge-text text-sm font-bold">학교/교육기관</div>
                   </div>
                 </div>
               </div>
@@ -77,8 +77,8 @@ export default function Home() {
             <div className="showcase-item">
               <div className="relative">
                 <div className="absolute top-0 right-0">
-                  <div class="badge-container left-badge">
-                    <div class="badge-text text-sm font-bold">로비</div>
+                  <div className="badge-container left-badge">
+                    <div className="badge-text text-sm font-bold">로비</div>
                   </div>
                 </div>
                 <Image src="/images/section2-3.png" alt="로비" width={500} height={500} />
@@ -95,8 +95,8 @@ export default function Home() {
             <div className="showcase-item">
               <div className="relative">
                 <div className="absolute top-0 left-0">
-                  <div class="badge-container ">
-                    <div class="badge-text text-sm font-bold">레스토랑/카페</div>
+                  <div className="badge-container ">
+                    <div className="badge-text text-sm font-bold">레스토랑/카페</div>
                   </div>
                 </div>
                 <Image src="/images/section2-4.png" alt="레스토랑/카페" width={500} height={500} />
