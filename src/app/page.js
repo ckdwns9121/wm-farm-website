@@ -108,11 +108,12 @@ export default function Home() {
                   </span>
                 </span>
               </div>
-              <div className="item-sub item-border font-bold txt-blue text-xs md:text-2xl p-6 md:p-12 break-keep">
-                <span>
-                  초록 식물이 주는 편안함과 싱그러움으로 어르신들의 정서적
-                  힐링을 선물해드립니다
+              <div className="item-sub item-border font-midium txt-blue text-xs md:text-2xl p-6 md:p-12 break-keep">
+                초록 식물이 주는{" "}
+                <span className="font-bold">
+                  편안함과 싱그러움으로 어르신들의 정서적 힐링
                 </span>
+                을 선물해드립니다
               </div>
             </div>
             <div className="showcase-item">
@@ -131,11 +132,10 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="item-sub font-bold txt-blue text-xs md:text-2xl  p-6 md:p-12 break-keep ">
-                <span>
-                  학교 / 교육기관에서 관찰 활동을 통해 인성 교육, 정서적인
-                  안정감을 키울 수 있습니다.
-                </span>
+              <div className="item-sub font-midium txt-blue text-xs md:text-2xl  p-6 md:p-12 break-keep ">
+                학교 / 교육기관에서 관찰 활동을 통해{" "}
+                <span className="font-bold">인성 교육, 정서적인 안정감</span>을
+                키울 수 있습니다
               </div>
             </div>
           </div>
@@ -155,11 +155,10 @@ export default function Home() {
                   height={500}
                 />
               </div>
-              <div className="item-sub item-border font-bold txt-blue text-xs md:text-2xl p-6 md:p-12 break-keep">
-                <p>
-                  힐링과 여유로움 편암함을 느낄 수 있는 로비 쇼케이스로 초록
-                  식물이 주는 휴식을 느껴보세요
-                </p>
+              <div className="item-sub item-border font-midium txt-blue text-xs md:text-2xl p-6 md:p-12 break-keep">
+                힐링과 여유로움 편암함을 느낄 수 있는 로비 쇼케이스로{" "}
+                <span className="font-bold">초록 식물이 주는 휴식</span>을
+                느껴보세요
               </div>
             </div>
 
@@ -179,11 +178,12 @@ export default function Home() {
                   height={500}
                 />
               </div>
-              <div className="item-sub font-bold txt-blue text-xs md:text-2xl p-6 md:p-12 break-keep">
-                <span>
-                  쇼케이스로 특별한 레시피 / 고급스러운 인테리어 효과를
-                  경험해보세요
+              <div className="item-sub font-midium txt-blue text-xs md:text-2xl p-6 md:p-12 break-keep">
+                쇼케이스로{" "}
+                <span className="font-bold">
+                  특별한 레시피 / 고급스러운 인테리어 효과를 경험
                 </span>
+                해보세요
               </div>
             </div>
           </div>
