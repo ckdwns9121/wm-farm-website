@@ -69,7 +69,7 @@ export default function Home() {
               className="section-icon"
             />
             <p className="text-xs md:text-3xl lg-text-5xl font-semibold">
-              좌/우측 다른 식물 키우기 가능 생육환경을 좌/우측 각각 제어
+              좌 / 우측 다른 식물 키우기 가능 생육환경을 좌 / 우측 각각 제어
             </p>
           </span>
         </div>
@@ -133,7 +133,7 @@ export default function Home() {
               </div>
               <div className="item-sub font-bold txt-blue text-xs md:text-2xl  p-6 md:p-12 break-keep ">
                 <span>
-                  학교/교육기관에서 관찰 활동을 통해 인성 교육, 정서적인
+                  학교 / 교육기관에서 관찰 활동을 통해 인성 교육, 정서적인
                   안정감을 키울 수 있습니다.
                 </span>
               </div>
@@ -236,7 +236,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="section5 bg-sky  py-6 pb-8 md:py-6 lg:py-6 relative">
+      <div className="section5 bg-sky  pt-8  relative">
         <div className="text-center">
           <p
             className="text-base md:text-xl lg:text-4xl txt-blue pb-2"
