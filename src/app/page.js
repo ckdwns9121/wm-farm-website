@@ -181,7 +181,7 @@ export default function Home() {
               </div>
               <div className="item-sub font-bold txt-blue text-xs md:text-2xl p-6 md:p-12 break-keep">
                 <span>
-                  쇼케이스로 특별한 레시피/고급스러운 인테리어 효과를
+                  쇼케이스로 특별한 레시피 / 고급스러운 인테리어 효과를
                   경험해보세요
                 </span>
               </div>
