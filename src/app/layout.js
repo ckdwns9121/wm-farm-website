@@ -7,8 +7,8 @@ const notoSansKr = Noto_Sans_KR({
 });
 
 export const metadata = {
-  title: "WM Farm",
-  description: "안녕하세요. WM Farm입니다.",
+  title: "더블유엠팜 식물재배기",
+  description: "신선한 도시, 즐거운 농장",
 };
 
 export default function RootLayout({ children }) {
