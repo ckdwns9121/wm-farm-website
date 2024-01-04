@@ -14,6 +14,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <meta
+        name="naver-site-verification"
+        content="47aa22d514f51f0c4cd102ff490276bdb6f30681"
+      />
       <link rel="icon" href="/icons/favicon.ico" />
       <body className={notoSansKr.className}>{children}</body>
     </html>
