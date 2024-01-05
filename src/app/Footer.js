@@ -16,7 +16,7 @@ export default function Footer() {
       </div>
       <div className="footer-divider"></div>
       <div className="relative w-full md:px-8 text-white text-xs md:text-base whitespace-nowrap flex flex-col items-center">
-        <div className="flex flex-col md:flex-row pr-2 w-full">
+        <div className="flex flex-col md:flex-row md:pb-2 w-full">
           <div className="footer-value flex md:pr-2">
             <div className="font-bold pr-1 md:pr-2">상호</div>
             <div className="font-medium pr-1 md:pr-2">(주) 더블유엠어시</div>
@@ -30,7 +30,7 @@ export default function Footer() {
             <div className="font-medium pr-1 md:pr-2">204-87-02111</div>
           </div>
         </div>
-        <div className="flex pb-2 w-full">
+        <div className="flex md:pb-2 w-full">
           <div className="footer-value flex md:pr-2">
             <div className="font-bold pr-1 md:pr-2">주소</div>
             <div className="font-medium pr-1 text-wrap break-keep md:pr-2 ">
