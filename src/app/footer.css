@@ -75,6 +75,9 @@ p.footer-title {
   p.footer-title {
     width: 55px;
   }
+  .footer-value {
+    font-size: 10px;
+  }
 }
 
 @media all and (max-width: 768px) {
