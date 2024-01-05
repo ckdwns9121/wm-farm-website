@@ -33,7 +33,7 @@ export default function Footer() {
         <div className="flex pb-2 w-full">
           <div className="footer-value flex md:pr-2">
             <div className="font-bold pr-1 md:pr-2">주소</div>
-            <div className="font-medium pr-1 text-wrap md:pr-2 ">
+            <div className="font-medium pr-1 text-wrap break-keep md:pr-2 ">
               전북 전주시 완산구 천잠로 303, 전주대 벤처창업관 308,302호
             </div>
           </div>
